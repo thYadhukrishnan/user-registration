@@ -14,11 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('login',[FrontendController::class,'login'])->name('login');
+Route::get('/',[FrontendController::class,'login'])->name('login');
 
 Route::post('dologin',[FrontendController::class,'dologin'])->name('dologin');
 
